@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>COUNTRIES </title>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Wyszukaj kraj według <span class="muted"> Stolicy</span></h1>
+      <div class="controls">
+        <input id="capitalInput" type="text" placeholder="Wpisz nazwę stolicy" aria-label="Nazwa stolicy" />
+        <button id="searchBtn">Szukaj kraju</button>
+      </div>
+      <p id="status"></p>
+      <p id="error" style="display:none"></p>
+
+      <table border ="1" id="resultsTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Capital</th>
+            <th>Population</th>
+            <th>Region</th>
+            <th>Subregion</th>
+         </tr>
+        </thead>
+        <tbody id="resultsBody">
+          <tr><td colspan="5" class="muted">Nie znaleziono podanego kraju. Wpisz stolicę i kliknij "Szukaj".</td></tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
